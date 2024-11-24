@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(
   cors({
-    origin: "http://localhost:8100", // Ajusta esto según la URL de tu frontend
+    origin: "*", 
   })
 );
 
