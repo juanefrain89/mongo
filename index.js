@@ -18,6 +18,11 @@ let db; // Variable para almacenar la conexión a la base de datos
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.use(
+  cors({
+    origin: "*", 
+  })
+);
 
 console.log("Servidor iniciado.");
 
