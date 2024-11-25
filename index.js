@@ -1,4 +1,4 @@
-const express = require("express");
+require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const cors = require("cors");
@@ -30,7 +30,7 @@ console.log("Servidor iniciado.");
 MongoClient.connect(mongoUrl, { useUnifiedTopology: true })
   .then((client) => {
     db = client.db(dbName);
-    console.log(`Conectado a la base de datos: ${dbName}`);
+    console.log("Conectado a la base de datos: ${dbName}");
   })
   .catch((err) => {
     console.error("Error al conectar a la base de datos:", err);
