@@ -35,6 +35,7 @@ MongoClient.connect(mongoUrl, { useUnifiedTopology: true })
   })
   .catch((err) => {
     console.error("Error al conectar a la base de datos:", err);
+    db(err)
     return res.send("error")
   });
 
