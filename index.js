@@ -102,7 +102,7 @@ app.get("/usuarios", async (req, res) => {
     res.status(200).json(usuarios);
   } catch (error) {
     console.error("Error al obtener los usuarios:", error);
-    res.send(err);
+    res.send("error", error);
   }
 });
 
