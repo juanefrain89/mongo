@@ -5,7 +5,7 @@ const cors = require("cors");
 const { MongoClient } = require("mongodb");
 
 // Configuración de conexión a MongoDB
-const mongoUrl = "mongodb+srv://universidad:123456*-.@cluster0.52oxy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"; // URL de conexión
+const mongoUrl = "mongodb+srv://universidad:123456*-.@cluster0.52oxy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0mongodb+srv://universidad:123456*-.@cluster0.52oxy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"; // URL de conexión
 const dbName = "nueva"; // Nombre de tu base de datos
 let db; // Variable para almacenar la conexión a la base de datos
 
