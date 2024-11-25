@@ -36,7 +36,6 @@ MongoClient.connect(mongoUrl, { useUnifiedTopology: true })
     console.error("Error al conectar a la base de datos:", err);
   });
 
-// Rutas
 app.post("/login", async (req, res) => {
     const { correo, contrasena } = req.body; 
     try {
@@ -96,10 +95,7 @@ console.log(id);
 
 app.get("/usuarios", async (req, res) => {
   try {
-    // Verificar conexión a la base de datos
-    if (!db) {
-      return res.status(500).json({ error: "Base de datos no conectada" });
-    }
+   
 
     const usuarios = await db.collection("usuarios").find({}).toArray();
 
