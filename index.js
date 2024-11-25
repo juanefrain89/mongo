@@ -100,7 +100,7 @@ app.get("/usuarios", async (req, res) => {
   try {
     // Verificar conexión a la base de datos
     if (!db) {
-      return res.status(500).json({ error: "Base de datos no conectada" });
+      return res.status(500).json({ error: "Base de datos no conectada en usuarios", db });
     }
 
     const usuarios = await db.collection("usuarios").find({}).toArray();
