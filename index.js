@@ -31,9 +31,11 @@ MongoClient.connect(mongoUrl, { useUnifiedTopology: true })
   .then((client) => {
     db = client.db(dbName);
     console.log("Conectado a la base de datos: ${dbName}");
+    return res.send("conectado")
   })
   .catch((err) => {
     console.error("Error al conectar a la base de datos:", err);
+    return res.send("error")
   });
 
 // Rutas
