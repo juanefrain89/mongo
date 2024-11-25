@@ -8,7 +8,7 @@ const { ObjectId } = require('mongodb');
 const dbHost = "bd"; // Nombre de la computadora que hospeda la base de datos
 const dbPort = 27017; // Puerto de MongoDB
 const dbName = "nueva"; // Nombre de tu base de datos
-const mongoUrl = "mongodb+srv://universidad:123456*-.@cluster0.52oxy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const mongoUrl = "mongodb+srv://universidad:<db_password>@cluster0.52oxy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 ; // URL de conexión
 
