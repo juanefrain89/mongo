@@ -16,6 +16,15 @@ app.use(cors({ origin: "*" }));
 
 console.log("Iniciando servidor...");
 
+
+
+app.get('/', (req, res) => {
+  console.log("¡Hola Mundo desde Node.js!");
+  res.send('Petición recibida');
+});
+
+
+
 // Conexión a MongoDB
 MongoClient.connect(mongoUrl, { useUnifiedTopology: true })
   .then((client) => {
